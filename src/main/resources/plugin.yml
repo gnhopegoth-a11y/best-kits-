@@ -1,0 +1,15 @@
+name: KitMenu
+version: 2.4
+main: com.example.kitmenu.KitMenuPlugin
+softdepend: [Shop]
+api-version: '1.21'
+description: Paged kit menu with kit arranging, icons, cooldowns and an admin command for kits and the kit shop
+commands:
+  kit:
+    description: Open the kit menu, preview a kit or claim one
+    usage: /kit [list|preview|claim] [kit]
+    aliases: [kits]
+  unstablekits:
+    description: Admin tools for kits and the kit shop
+    usage: /unstablekits
+    aliases: [ukits]
