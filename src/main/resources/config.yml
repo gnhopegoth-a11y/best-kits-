@@ -1,0 +1,35 @@
+# ============================================================
+# KitMenu
+# The kits themselves are saved in kits.yml. Do not edit them by
+# hand: use /unstablekits in game.
+# ============================================================
+
+# Players who can use /unstablekits (the console always can)
+admins:
+  - rem0i
+  - Rem0iX
+
+# Admins can claim any kit and ignore cooldowns.
+# Set this to false when you want to test a cooldown yourself.
+admin-bypass: true
+
+# Which permission unlocks a kit set to "default" (the normal case).
+# A kit is unlocked by ANY of these prefixes + the kit's id (or the name of its shop kit):
+#   - permission-prefix (this plugin's own)
+#   - the prefix your Shop plugin gives when a kit is bought (read from the Shop's config automatically)
+#   - every prefix in accepted-prefixes
+# Case, spaces, underscores and doubled letters do not matter, so a bought playerkits.kit.Wemmbu unlocks the kit "wembu".
+# Change one kit with /unstablekits permission (kit) (node|none|default).
+permission-prefix: "kitmenu.kit."
+accepted-prefixes:
+  - "kitmenu.kit."
+  - "playerkits.kit."
+
+# Link kits to the Shop by name and apply the cooldowns, colours and prices from the screenshots.
+# Runs when the server starts, on /unstablekits reload and when you create a kit. Each kit is done only once,
+# so what you change by hand stays. Run it yourself with /unstablekits sync (preview first: /unstablekits sync preview).
+auto-link: true
+
+# Cooldown for new kits: 30s, 10m, 12h, 1d. Every kit also got 10m once, when version 2.1 first started.
+# Change one kit with /unstablekits cooldown (kit) (time), or all kits with /unstablekits cooldown all (time).
+default-cooldown: 10m
